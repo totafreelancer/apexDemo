@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  float: left;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+nav li span.icon {
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a, .logo {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  nav {
+    float: none;
+  }
+}
+
+
+
+.MyAddress {
+  background-color: red;
+  background-image: linear-gradient(to right, rgb(192, 162, 98) , rgb(98, 0, 255));
+  border: 10px solid;
+  border-color: rgb(3, 17, 138) rgb(33, 209, 80) rgb(199, 10, 216) rgb(255, 0, 0);
+}
+table {
+  width: 100%;
+  position: relative;
+}
+table .hImg {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  right: 10px;
+}
+
+table .hImg img {
+  width: 100%;
+}
+table thead tr {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-weight: 600;
+  color: aliceblue;
+}
+table tbody tr th {
+  font-size: 30px;
+  color: greenyellow;
+  font-weight: 600;
+}
+table tbody tr td {
+  font-size: 25px;
+  color: yellow;
+}
+
+table tbody tr td img {
+  width: 100%;
+}
+.para {
+  margin-top: 10px;
+  border: 10px solid transparent;
+  border-image: url(../images/img.webp) 90 round;
+}
+
+
+.Ims {
+  display: flex;
+  padding: 10px;
+}
+.Ims .left {
+  width: 50%;
+}
+.Ims .left img {
+  width: 90%;
+  height: 300px;
+  padding: 0px;
+  margin: 10px;
+  border-radius: 2rem;
+}
+.Ims .right {
+  width: 50%;
+}
+.Ims .right img {
+  width: 90%;
+  height: 300px;
+  padding: 0px;
+  margin: 10px;
+  border-radius: 2rem;
+}
+.Ims .images {
+  position: relative;
+}
+.Ims .images:hover {
+  background: none;
+}
+.Ims .images:hover img {
+  width: 90%;
+  height: 300px;
+  padding: 0px;
+  margin: 10px;
+  opacity: 1;
+  transition: box-shadow 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.Ims .images img {
+  opacity: 0.5;
+}
+.Ims .images .Text {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Ims .images .Text h1 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+.Ims .images:hover .Text {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.articel {
+border: 2px solid blue;
+padding: 5px;
+position: relative;
+}
+.articel .work {
+width: 100%;
+}
+.articel .work img.left {
+float: right;
+width:300px;
+height:300px;
+margin-left:15px;
+}
+
+
+
+.rotating-div {
+position: absolute;
+top: 30%;
+z-index: -1;
+left: 30%;
+}
+.rotating-div::after {
+content: "";
+display: inline-block;
+transform: rotate(30deg);
+width: 200px;
+height: 200px;
+background-color: #d9c7c7;
+border: 1px solid #ccc;
+animation: rotate 5s linear infinite;
+}
+
+.font_family h2 {
+  font: small-caps bold 30px/50px Georgia, serif;
+}
+
+
+.ficon_Svg h1 svg{
+  width: 25px;
+}
+
+
+@keyframes rotate {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}

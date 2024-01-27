@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Navigation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+        margin: 0 15px;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        font-size: 25px;
+    }
+
+    nav li:hover {
+        opacity: 0.7;
+        background: chartreuse;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    nav li:hover .submenu {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .submenu a {
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .submenu a:hover {
+      background-color: #555;
+    }
+
+
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      width: 200px;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Interactive Navigation</h1>
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>Services
+            <div class="submenu">
+            <a href="#">Web Development</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Digital Marketing</a>
+            </div>
+        </li>
+        <li>Contact</li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=2048x2048&w=is&k=20&c=t9_zg20wVbrBoGn0tw__1fFq4ykeKs15TQQ3x-ehVC0=" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+      <img src="https://www.istockphoto.com/photo/serene-latin-woman-enjoy-sunset-with-gratitude-gm1496615469-519230511?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&utm_term=nature" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_640.jpg" alt="Image 3">
+    </div>
+    <!-- Add more gallery items as needed -->
+  </div>
+
+  
+
+  <!-- The rest of your webpage content goes here -->
+
+</body>
+</html>
