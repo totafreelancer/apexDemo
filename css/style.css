@@ -158,8 +158,9 @@ table tbody tr td img {
 }
 .Ims .images .Text {
   position: absolute;
-  width: 100%;
+  width: 85%;
   top: 10px;
+  left: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
