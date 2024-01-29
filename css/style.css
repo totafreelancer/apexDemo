@@ -2,24 +2,57 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
 }
+a {
+  text-decoration: none;
+}
+.top_header {
+  padding: 10px 15px;
+}
+.top_header .head {
+  text-align: end;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top_header .head a .text {
+  color: black;
+  font-family: emoji;
+}
+.top_header .head a .text:hover {
+  text-decoration: underline;
+}
+.top_header .head .dari {
+  padding: 0 5px;
+}
 
 header.headers {
   width: 100%;
+  background-color: transparent;
+  color: #fbfaf9;
+  position: relative;
+  background:url(../img/a4b23aab-0f31-46a8-9aac-b833ab94c5b5.jpeg);
+  background-size: cover;
+}
+header.headers .D_hovers:hover {
+  background: #fbfaf9;
+  transition: background 0.5s;
 }
 header.headers .navbar {
-  background-color: #8217af;
-  color: #fbfaf9;
+  max-width: 1280px;
   height: 50px;
   padding: 5px 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
 }
 header.headers .navbar .logos {
   width: 100px;
 }
 header.headers .navbar a {
-  margin-right: 1.5rem;
+  padding: 0 5px;
 }
 .navbar .logos a img {
   width: 100%;
@@ -27,6 +60,56 @@ header.headers .navbar a {
 .navbar .navs .nav_tag {
   color: #fbfaf9;
 }
+.navbar .navs .nav_tag:hover {
+  text-decoration: underline;
+}
+header.headers .D_hovers:hover .navbar .navs .nav_tag {
+  color: rgb(40, 35, 35);
+  transition: color 0.5s;
+}
+header.headers .all_icon {
+  width: 35rem;
+  text-align: end;
+}
+header.headers .all_icon a.icon {
+  color: #fbfaf9;
+  margin: 0 10px;
+  padding: 0;
+}
+header.headers .D_hovers:hover .all_icon a.icon {
+  color: rgb(40, 35, 35);
+  transition: color 0.5s;
+}
+header.headers .all_icon a.icon i {
+  font-size: 15px;
+}
+.heads_d {
+  width: 100%;
+  height: 15rem;
+}
+.heads_d .h_text {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 3.5rem 0;
+}
+.heads_d .h_text a {
+  font-size: 32px;
+}
+.heads_d .h_text .h_btn {
+  background: no-repeat;
+  border: 1px solid #fbfaf9;
+  border-radius: 5px;
+  margin: 0 15px;
+  color: #fbfaf9;
+  padding: 7px;
+}
+
+
+
+
+
 
 
 .MyAddress {
