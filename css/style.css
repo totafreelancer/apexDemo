@@ -119,12 +119,19 @@ header.headers .all_icon a.icon i {
 .bodytDiv1 .style .left {
   width: 50%;
 }
+.bodytDiv1 .style .left .banner_text {
+  width: 70%;
+}
 .bodytDiv1 .style .left .tptext h1 {
   font-size: 30px;
   color: #fbfaf9;
 }
 .bodytDiv1 .style .left .tptext p {
   color: #fbfaf9;
+}
+.bodytDiv1 .left .banner_text .text_btn a {
+  border: 1px solid #fbfaf9;
+  margin: 0 5px;
 }
 .bodytDiv1 .style .right {
   width: 50%;
