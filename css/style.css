@@ -104,6 +104,7 @@ header.headers .all_icon a.icon i {
   margin: 0 15px;
   color: #fbfaf9;
   padding: 7px;
+  cursor: pointer;
 }
 
 .bodytDiv1 .body_style {
