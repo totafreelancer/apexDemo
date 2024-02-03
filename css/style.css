@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  width: 100%;
+}
 .top_header {
   padding: 10px 15px;
 }
@@ -104,13 +107,12 @@ header.headers .all_icon a.icon i {
   margin: 0 15px;
   color: #fbfaf9;
   padding: 7px;
-  cursor: pointer;
 }
 
 .bodytDiv1 .body_style {
   width: 100%;
-  height: 400px;
-  background-color: rgb(0, 0, 0);
+  height: 500px;
+  background-color: #191919;
 }
 .bodytDiv1 .style {
   width: 1280px;
@@ -119,6 +121,7 @@ header.headers .all_icon a.icon i {
 }
 .bodytDiv1 .style .left {
   width: 50%;
+  z-index: 1;
 }
 .bodytDiv1 .style .left .banner_text {
   width: 70%;
@@ -130,178 +133,43 @@ header.headers .all_icon a.icon i {
 .bodytDiv1 .style .left .tptext p {
   color: #fbfaf9;
 }
+.bodytDiv1 .left .banner_text .text_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .bodytDiv1 .left .banner_text .text_btn a {
   border: 1px solid #fbfaf9;
-  margin: 0 5px;
+  margin: 20px 10px !important;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #fbfaf9;
+  width: 80px;
+  text-align: center;
+}
+.bodytDiv1 .left .banner_text .text_btn a:hover {
+  background: #fbfaf9;
+  color: black;
+}
+.bodytDiv1 .imss .banner_img img {
+  width: 105%;
 }
 .bodytDiv1 .style .right {
   width: 50%;
+  position: relative;
 }
-
-
-
-
-
-.MyAddress {
-  background-color: red;
-  background-image: linear-gradient(to right, rgb(192, 162, 98) , rgb(98, 0, 255));
-  border: 10px solid;
-  border-color: rgb(3, 17, 138) rgb(33, 209, 80) rgb(199, 10, 216) rgb(255, 0, 0);
+.banner_video {
+  position: absolute;
+  top: 0;
+  background: #000;
 }
-table {
+.banner_video .video_background {
+  width: 80%;
+  height: 37rem;
+  margin: 0 auto;
+}
+.banner_video .video_background video {
   width: 100%;
-  position: relative;
-}
-table .hImg {
-  position: absolute;
-  width: 30%;
-  bottom: 0;
-  right: 10px;
-}
-
-table .hImg img {
-  width: 100%;
-}
-table thead tr {
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: cursive;
-  font-weight: 600;
-  color: aliceblue;
-}
-table tbody tr th {
-  font-size: 30px;
-  color: greenyellow;
-  font-weight: 600;
-}
-table tbody tr td {
-  font-size: 25px;
-  color: yellow;
-}
-
-table tbody tr td img {
-  width: 100%;
-}
-.para {
-  margin-top: 10px;
-  border: 10px solid transparent;
-  border-image: url(../images/img.webp) 90 round;
-}
-
-
-.Ims {
-  position: relative;
-  display: flex;
-  padding: 10px;
-}
-.Ims .left {
-  width: 50%;
-}
-.Ims .left img {
-  width: 90%;
-  height: 300px;
-  padding: 0px;
-  margin: 10px;
-  border-radius: 2rem;
-}
-.Ims .right {
-  width: 50%;
-}
-.Ims .right img {
-  width: 90%;
-  height: 300px;
-  padding: 0px;
-  margin: 10px;
-  border-radius: 2rem;
-}
-.Ims .images {
-  position: relative;
-}
-.Ims .images:hover img {
-  width: 90%;
-  height: 300px;
-  padding: 0px;
-  margin: 10px;
-  opacity: 1;
-  transition: box-shadow 0.5s;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.Ims .images img {
-  opacity: 0.5;
-}
-.Ims .images .Text {
-  position: absolute;
-  width: 85%;
-  top: 10px;
-  left: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Ims .images .Text h1 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 2rem;
-  opacity: 0;
-}
-.Ims .images:hover .Text h1 {
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-.Ims .images:hover .Text {
-  opacity: 1;
-}
-
-.articel {
-padding: 5px;
-position: relative;
-}
-.articel .work {
-width: 100%;
-}
-.articel .work img.left {
-float: right;
-width:300px;
-height:300px;
-margin-left:15px;
-}
-
-.rainbow {
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 2rem;
-}
-.rainbow::before {
-  content: "";
-  position: absolute;
-  z-index: -2;
-  left: -50%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: #399953;
-  background-repeat: no-repeat;
-  background-size: 50% 50%, 50% 50%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
-  animation: tot_rotate 4s linear infinite;
-}
-.rainbow::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 6px;
-  top: 6px;
-  width: calc(100% - 12px);
-  height: calc(100% - 12px);
-  background: white;
-  border-radius: 5px;
-}
-
-@keyframes tot_rotate {
-  100% {
-    transform: rotate(1turn);
-  }
+  height: 85%;
+  margin-top: 4rem;
 }
