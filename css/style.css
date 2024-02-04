@@ -125,6 +125,7 @@ header.headers .all_icon a.icon i {
 }
 .bodytDiv1 .style .left .banner_text {
   width: 70%;
+  padding: 0 2rem;
 }
 .bodytDiv1 .style .left .tptext h1 {
   font-size: 30px;
@@ -252,6 +253,7 @@ p.para {
 .img_sec {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 span.af_bf {
   width: 100%;
