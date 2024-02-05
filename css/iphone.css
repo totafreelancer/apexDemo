@@ -1,0 +1,91 @@
+section {
+    background: #f0f8fe;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.main_div {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.main_div .heding_tex {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 2rem 0;
+}
+.main_div .mains {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+}
+.main_div .mains .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.main_div .mains .left .text {
+    width: 60%;
+    text-align: center;
+}
+.main_div .mains .left .text h3 {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+.main_div .mains .left .text p {
+    font-size: 1.5rem;
+}
+.main_div .mains .right {
+    width: 50%;
+}
+.main_div .mains .links-inline li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.main_div .mains .links-inline li  span.icon-copy {
+    color: #06c;
+}
+.main_div .mains .links-inline li  span.icon-copy:hover {
+    text-decoration: underline;
+}
+.main_div .mains .links-inline li  span.icon-copy i {
+    font-size: 1rem;
+}
+.main_div .mains .right .imgs {
+    padding: 1rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main_div .mains {
+        display: block;
+    }
+    .main_div .heding_tex {
+        font-size: 1.4rem;
+        padding: 5px 15px;
+    }
+    .main_div .mains .left {
+        width: 100%;
+    }
+    .main_div .mains .left .text {
+        width: 100%;
+    }
+    .main_div .mains .left .text p {
+        font-size: 1.3rem;
+    }
+    .main_div .mains .links-inline li {
+        font-size: 1.2rem;
+    }
+    .main_div .mains .right {
+        width: 100%;
+    }
+  }
