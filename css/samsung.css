@@ -1,11 +1,111 @@
-# {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+
+img {
+    width: 100%;
+    max-height: 100%;
+}
+/* heading nav */
+nav {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .nav_ber {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 1rem;
+}
+.nav_ber .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_ber ul .item a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.nav_ber ul .item:hover a {
+    color: aliceblue;
+}
+.nav_ber .nav_item ul {
+    display: flex;
+}
+.nav_ber .nav_item ul .item {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.nav_ber .nav_item ul .item:hover {
+    background: black;
+    border-radius: 2rem;
+}
+.nav_ber .nav_item ul .item:hover i{
+    color: aliceblue;
+}
+.nav_ber .nav_item ul .item i {
+    color: black;
+}
+.nav_ber .nav_item ul .fa_bars {
+    display: none;
+}
+
+/* heading */
+
+.sections {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sections .saider {
+    position: relative;
+    height: 600px;
+}
+.sections .saider .tex {
+    position: absolute;
+    top: 18%;
+    left: 36%;
+    font-size: 1.5rem;
+    color: black;
+    font-family: sans-serif;
+}
+
+/* Mobile */
+.Mobile {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.Mobile .head h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+.Mobile .Mobile_nav .nav_item ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.Mobile .Mobile_nav .nav_item ul .items {
+    margin: 0 8px;
+}
+.Mobile .Mobile_nav .nav_item ul .btn {
+    background: no-repeat;
+    border: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.Mobile .Mobile_nav .nav_item ul .btn .underline {
+    background: black;
+    width: 100%;
+    height: 2px;
+}
+.Mobile .Mobile_nav .baground {
+    background-image: url(../img/GNB_E3_168x136_mo.png);
+    padding: 418px 24px 0 24px;
+    height: 136px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
