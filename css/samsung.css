@@ -74,38 +74,121 @@ nav {
     text-align: center;
     background-color: #f4f4f4;
 }
-.Mobile .head h1 {
+.Mobile.baground-1 {
+    background-image: url(../img/HOME_E3_MX-KV_1440x810_pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.Mobile.baground-2 {
+    background-image: url(../img/1440X810-v4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.Mobile.baground-3 {
+    background-image: url(../img/PF_KV_1440x810.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.head h1 {
     font-size: 2.5rem;
     margin: 0;
     padding: 10px 0;
     font-family: sans-serif;
 }
-.Mobile .Mobile_nav .nav_item ul {
+.Mobile_nav .nav_item ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
-.Mobile .Mobile_nav .nav_item ul .items {
+.Mobile_nav .nav_item ul .items {
     margin: 0 8px;
 }
-.Mobile .Mobile_nav .nav_item ul .btn {
+.Mobile_nav .nav_item ul .btn {
     background: no-repeat;
     border: none;
     font-size: 1.2rem;
+    font-weight: 600;
     font-family: sans-serif;
     cursor: pointer;
 }
-.Mobile .Mobile_nav .nav_item ul .btn .underline {
+.Mobile_nav .nav_item ul .btn .underline {
     background: black;
     width: 100%;
     height: 2px;
 }
 .Mobile .Mobile_nav .baground {
-    background-image: url(../img/GNB_E3_168x136_mo.png);
     padding: 418px 24px 0 24px;
-    height: 136px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+}
+.Mobile .Mobile_nav .baground .texs h1 {
+    font-size: 2rem;
+    font-family: system-ui;
+}
+.Mobile .Mobile_nav .baground .buts button {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.Mobile .Mobile_nav .baground .buts {
+    height: 88px;
+}
+.Mobile .Mobile_nav .baground .buts button:hover {
+    background: rgb(51, 48, 48);
+}
+
+.Mobile.baground-2 .head h1 {
+    color: white;
+}
+.Mobile.baground-2 .Mobile_nav .nav_item ul .btn {
+    color: white;
+}
+.Mobile.baground-2 .Mobile_nav .baground .texs h1 {
+    color: white;
+}
+.Mobile.baground-2 .Mobile_nav .baground .buts button {
+    color: black;
+}
+.Mobile.baground-2 .Mobile_nav .baground .buts button {
+    background: white;
+}
+.Mobile.baground-2 .Mobile_nav .baground .buts button:hover {
+    background: rgb(230, 226, 226);
+}
+
+.Month {
+    text-align: center;
+}
+.Month .grids {
+    display: grid;
+    grid: 24% 24% 24% 24%;
+}
+.Month .grids {
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+  
+.Month .grids  > div {
+    background-color: rgb(221 221 221 / 80%);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.Month .grids .grid1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.Month .grids .grid {
+    padding: 7.77777778vw 10.69444444vw 13.61111111vw 10.69444444vw;
+    margin-left: 0;
+    border-radius: 2rem;
 }
