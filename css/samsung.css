@@ -188,7 +188,49 @@ nav {
     grid-row: 1 / 3;
 }
 .Month .grids .grid {
-    padding: 7.77777778vw 10.69444444vw 13.61111111vw 10.69444444vw;
+    padding: 4rem 5rem 1rem 5rem;
     margin-left: 0;
     border-radius: 2rem;
+    cursor: pointer;
+}
+.Month .grids .grid_img {
+    text-decoration: none;
+}  
+.Month .grids .grid .text {
+    color: black;
+    font-family: sans-serif;
+}
+.Month .grids .grid .tex_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.Month .grids .grid .tex_btn .paras {
+    position: absolute;
+    top: 0;
+    color: black;
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.Month .grids .grid:hover .grid_img .tex_btn .paras {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+.Month .grids .grid .tex_btn .boton {
+    border: none;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.Month .grids .grid:hover .grid_img .tex_btn .boton {
+    opacity: 1;
 }
